@@ -63,3 +63,53 @@ th {
     background-color: #cc0000;
     color: black;
 }
+
+form{
+    margin-top: 40px;
+    background-color: #302f2f;
+    max-width: 400px;
+    margin-left: 36%;
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+   
+}
+
+input{
+    display: block;
+    margin-left: 28%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+select{
+    display: block;
+    margin-top:5px ;
+    margin-left: 28%;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+textarea{
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+label{
+    color: #cc0000;
+    font-size:20px;
+}
+
+#enviar{
+    margin-left: 40%;
+    margin-top: 20px;
+    height: 35px;
+    width: 80px;
+    background-color: #ea0a0a;
+    color: white;
+    font-size: medium;
+}
+
+.form-ini{
+    text-align: center;
+}
