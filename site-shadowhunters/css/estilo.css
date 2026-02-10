@@ -4,19 +4,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+     padding-top: 160px;
 }
 
 header {
     background-color: #000000;
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #cc0000; 
+    border-bottom: 3px solid #cc0000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav {
     background-color: #333;
     padding: 10px;
     text-align: center;
+    position: fixed;
+    top: 120px;
+    width: 100%;
+    z-index: 999;
 }
 
 nav a {
@@ -31,12 +40,14 @@ nav a:hover {
     color: #cc0000; 
 }
 
-main {
-    width: 80%;
-    margin: 20px auto; 
+.conteudo {
+   width: 80%;
+    margin: 20px auto;
     padding: 20px;
     background-color: #252525;
     border: 1px solid #444;
+
+    margin-top: 220px;
 }
 
 h1, h2 {
