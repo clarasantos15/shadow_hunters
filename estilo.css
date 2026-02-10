@@ -1,6 +1,6 @@
 body {
-    background-color: #1a1a1a; /* Fundo quase preto */
-    color: #e0e0e0; /* Letra cinza claro */
+    background-color: #1a1a1a; 
+    color: #e0e0e0; 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -44,7 +44,6 @@ h1, h2 {
     color: #cc0000;
 }
 
-/** estilo do elenco**/
 table {
     width: 100%;
     border-collapse: collapse;
@@ -116,13 +115,11 @@ label{
 }
 
 .conteudo-principal {
-    animation: fadeIn 1s ease-out;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* --- ESTILO DOS CARDS GRANDES (Topo e Trailer) --- */
 .card-shadow {
     display: flex;
     align-items: center;
@@ -136,7 +133,7 @@ label{
 }
 
 .card-shadow:hover {
-    border-color: #b30000; /* Brilho vermelho ao focar no trailer */
+    border-color: #b30000; 
 }
 
 .reverse {
@@ -164,35 +161,33 @@ label{
     margin-bottom: 15px;
 }
 
-/* --- GRADE DE PERSONAGENS (Os 7 cards) --- */
 .galeria-elenco {
-    display: grid;
-    /* Organiza os 7 personagens automaticamente */
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
     gap: 25px;
     padding: 20px 0;
-    margin-bottom: 60px; /* Garante que o trailer fique longe */
+    margin-bottom: 60px; 
 }
 
-/* --- EFEITOS NOS CARDS DOS PERSONAGENS --- */
 .card-personagem {
     background: #121212;
     border: 1px solid #333;
     border-radius: 10px;
     overflow: hidden;
-    /* Transição elástica (várias coisas em uma linha) */
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.4s, box-shadow 0.4s;
+    width: 220px; 
+    transition: transform 0.4s ease, border-color 0.4s, box-shadow 0.4s;
 }
 
 .card-personagem:hover {
-    transform: scale(1.05); /* Sobe levemente */
-    border-color: #d4af37; /* Cor de runa dourada */
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); /* Brilho dourado */
+    transform: scale(1.05); 
+    border-color: #d4af37; 
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); 
 }
 
 .moldura-foto {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 220px; 
     overflow: hidden;
 }
 
@@ -200,19 +195,13 @@ label{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top;
-    filter: grayscale(50%); /* Efeito sombrio inicial */
-    transition: filter 0.5s ease;
-}
-
-.card-personagem:hover img {
-    filter: grayscale(0%); /* Ganha vida ao passar o mouse */
+    
 }
 
 .detalhes {
     padding: 15px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.03); /* Efeito de vidro suave */
+    background: rgba(255, 255, 255, 0.03); 
 }
 
 .detalhes h3 {
@@ -227,7 +216,6 @@ label{
     text-transform: uppercase;
 }
 
-/* --- BOTÃO DO TRAILER COM EFEITO NEON --- */
 .btn-trailer {
     display: inline-block;
     margin-top: 20px;
@@ -243,5 +231,4 @@ label{
 .btn-trailer:hover {
     background-color: #fff;
     color: #b30000;
-    box-shadow: 0 0 10px #b30000, 0 0 30px #b30000; /* Brilho estendido */
 }
